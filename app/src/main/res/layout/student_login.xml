@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayoutLogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".student.StudentLogin">
+    <LinearLayout
+        android:id="@+id/layout_email_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@drawable/logo" />
+
+        <EditText
+            android:id="@+id/field_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/recet"
+            android:gravity="center"
+            android:hint="E-mail"
+            android:padding="12dp"
+            android:textColorHint="#fff"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/field_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/recet"
+            android:gravity="center"
+            android:hint="Password"
+            android:padding="12dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:inputType="textPassword"
+            android:textSize="16sp"
+            android:textColorHint="@color/white"
+            android:fontFamily="sans-serif"            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/button_sign_up"
+            android:layout_width="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/square"
+            android:hint="Sign Up"
+            android:textColorHint="@color/white"
+            android:textAllCaps="false"
+            />
+        <Button
+            android:id="@+id/button_sign_in"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/square"
+            android:textAllCaps="false"
+            android:hint="Sign In"
+            android:textColorHint="@color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot password ?"
+            android:layout_marginTop="10dp"
+            android:id="@+id/forgot"
+            android:fontFamily="sans-serif"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
